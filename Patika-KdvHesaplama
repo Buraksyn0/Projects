@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class patika_odev
+{
+    public static void main(String[] args) {
+//Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18
+// tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
+
+        int girilen_tutar;
+        double KdvOrani,kdvTutar,kdvliTutar;
+
+
+        Scanner scanner=new Scanner(System.in);
+
+        System.out.print("Lütfen ürünün tutarını giriniz: ");
+        girilen_tutar=scanner.nextInt();
+
+        KdvOrani=girilen_tutar<1000 ? 0.18 : 0.8;
+        kdvTutar=girilen_tutar*KdvOrani;
+        kdvliTutar=girilen_tutar+kdvTutar;
+
+        System.out.println("Ürünün KDV'siz tutarı: "+girilen_tutar);
+        System.out.println("**************************************");
+        System.out.println("Ürünün KDV oranı: "+KdvOrani);
+        System.out.println("**************************************");
+        System.out.println("Ürünün KDV'li tutarı: "+kdvliTutar);
+
+    }
+}
