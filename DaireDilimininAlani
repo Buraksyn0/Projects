@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class DaireninAlaniCevresi {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        /*
+         Yarıçapı r, merkez açısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
+
+        𝜋 sayısını = 3.14 alınız.
+
+        Formül : (𝜋 * (r*r) * 𝛼) / 360 
+         
+         */
+
+         int r,a;
+         double pi_sayisi=3.14,alan;
+
+         System.out.println("Alanını hesaplamak istediğiniz dairenin yarıçapını giriniz:");
+
+         r=scanner.nextInt();
+
+         System.out.println("Daire diliminin alfa açısını giriniz: ");
+         a=scanner.nextInt();
+
+         alan=(pi_sayisi * (r*r) * a) / 360 ;
+
+         System.out.println("Daire diliminin alanı: "+alan);
+
+
+
+
+
+
+
+
+    }
+    
+}
