@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+import javax.xml.transform.Source;
+public class SinifiGecmeDurumu {
+    public static void main(String[] args) {
+        //Dersler : Matematik, Fizik, Türkçe, Kimya, Müzik
+        //Geçme notu : 55
+        //Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
+
+        Scanner scanner = new Scanner(System.in);
+
+        int matematik,fizik,turkce,kimya,muzik;
+        double ortalama;
+
+        System.out.println("Lütfen matematik notunuzu giriniz: ");
+        matematik = scanner.nextInt();
+
+        System.out.println("Lütfen fizik notunuzu giriniz : ");
+        fizik=scanner.nextInt();
+
+        System.out.println("Lütfen türkçe notunuzu giriniz : ");
+        turkce=scanner.nextInt();
+
+
+        System.out.println("Lütfen kimya notunuzu giriniz : ");
+        kimya=scanner.nextInt();
+
+
+        System.out.println("Lütfen müzik notunuzu giriniz : ");
+        muzik=scanner.nextInt();
+
+        
+        if(matematik<0 || matematik>100 || fizik<0 || fizik>100 || turkce<0 || turkce>100 || kimya<0 || kimya>100 || muzik<0 || muzik>100){
+            System.out.println("Geçersiz not girişi yaptınız lütfen 0 ile 100 arasındaki notları giriniz.");
+        }
+
+        else{
+            ortalama=(matematik + fizik + turkce + kimya + muzik) / 5.0;
+            System.out.println("Ortalamanız : " +ortalama);
+
+            if(ortalama >= 55){
+            System.out.println("Tebrikler başarılı bir şekilde geçtiniz!");
+        }
+        else{
+            System.out.println("Kaldınız , yeni senede başarılar!");
+        }
+
+        
+        }
+
+        
+
+        
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+    }
+    
+}
