@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner14;
+public class kullaniciGirisi {
+    public static void main(String[] args) {
+        
+        /*
+         * Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+         */
+
+        String userName,password,newPassword,select;
+
+        Scanner scanner = new Scanner(System.in);
+        
+        //Kullanıcı adı ile şifre girişi
+
+        System.out.println("Lütfen kullanıcı adınızı giriniz: ");
+        userName = scanner.nextLine();
+
+        System.out.println("Lütfen şifrenizi giriniz: ");
+        password = scanner.nextLine();
+
+        //Kullanıcı adı ve şifrenin kontrolü
+
+        if(userName.equals("Buraksyn0") && password.equals("patika.dev")){
+            System.out.println("Giriş yapılıyor lütfen bekleyiniz...");
+        }
+        else if(!userName.equals("Buraksyn0") && password.equals("patika.dev")){
+            System.out.println("Kullanıcı adınız hatalı lütfen tekrar deneyiniz...");
+            
+        }
+        else if(userName.equals("Buraksyn0") && !password.equals("patika.dev")) {
+            System.out.println("Parolanız hatalı şifrenizi sıfırlamak ister misiniz?");
+            System.out.println("Yeni şifre oluşturmak için : 'E' tuşuna basınız... \n Yeni şifre oluşturmak istemiyor ve çıkış yapmak istiyorsanız 'H' tuşuna basınız..." );
+            System.out.println("Seçiminiz nedir?");
+            select=scanner.nextLine();
+
+            if(select.equals("E") || select.equals("e")){
+                System.out.println("Lütfen yeni şifrenizi oluşturunuz.(Yeni şifreniz eski şifrenizden farklı olmalıdır.)");
+                newPassword=scanner.nextLine();
+
+                if(!newPassword.equals("patika.dev")){
+                    System.out.println("Şifreniz başarıyla değiştirildi...");
+                }
+
+                else{
+                    System.out.println("Yeni şifreniz eski şifrenizle aynı olamaz.Lütfen tekrar deneyiniz...");
+                }
+            }
+            else if(select.equals("H") || select.equals("h")){
+                System.out.println("Çıkış yapılıyor lütfen bekleyiniz...");
+            }
+
+            else{
+                System.out.println("Geçersiz işlem lütfen tekrar deneyiniz...");
+            }
+
+
+
+            }
+
+
+
+
+
+        }
+       
+
+        
+
+        
+
+            
+        
+
+
+
+
+
+    }
+    
+
