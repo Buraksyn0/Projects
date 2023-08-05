@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class CinZodyagiHesaplama {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        int dogum_yili;
+
+        System.out.println("Lütfen doğum yılınızı giriniz: ");
+        dogum_yili=scanner.nextInt();
+
+        if(dogum_yili % 12 == 0){
+            System.out.println("Çin Zodyağı Burcunuz Maymundur.");
+        }
+        else if(dogum_yili%12 == 1){
+            System.out.println("Çin Zodyağı Burcunuz Horozdur.");
+        }
+        else if(dogum_yili%12 == 2){
+            System.out.println("Çin Zodyağı Burcunuz Köpektir.");
+        }
+        else if(dogum_yili%12 == 3){
+            System.out.println("Çin Zodyağı Burcunuz Domuzdur.");
+        }
+        else if(dogum_yili%12 == 4){
+            System.out.println("Çin Zodyağı Burcunuz Faredir.");
+        }
+        else if(dogum_yili%12 == 5){
+            System.out.println("Çin Zodyağı Burcunuz Öküzdür.");
+        }
+        else if(dogum_yili%12 == 6){
+            System.out.println("Çin Zodyağı Burcunuz Kaplandır.");
+        }
+        else if(dogum_yili%12 == 7){
+            System.out.println("Çin Zodyağı Burcunuz Tavşandır.");
+        }
+        else if(dogum_yili%12 == 8){
+            System.out.println("Çin Zodyağı Burcunuz Ejderhadır.");
+        }
+        else if(dogum_yili%12 == 9){
+            System.out.println("Çin Zodyağı Burcunuz Yılandır.");
+        }
+        else if(dogum_yili%12 == 10){
+            System.out.println("Çin Zodyağı Burcunuz Attır.");
+        }
+        else if(dogum_yili%12 == 11){
+            System.out.println("Çin Zodyağı Burcunuz Koyundur.");
+        }
+
+        
+
+
+
+    }
+    
+}
