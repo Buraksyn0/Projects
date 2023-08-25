@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class CiftSayiBulma {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int sayiAdedi=0,sayi,toplam=0;
+        double ortalama;
+        
+
+
+        System.out.println("Lütfen hedef sayıyı belirleyiniz: ");
+        sayi=scanner.nextInt();
+
+        System.out.println("**********************************");
+
+        System.out.println("Verilen şartları sağlayan sayılar: ");
+
+        for(int i=1;i<=sayi;i++){
+            if(i % 3 == 0 && i % 4 == 0){
+                
+                sayiAdedi+=1;
+                toplam=toplam+i;
+                System.out.println(i);
+            
+
+            }
+            
+
+        }
+
+                System.out.println("**********************************");
+
+        
+        ortalama=toplam/sayiAdedi;
+        System.out.println("Belirlenen sayıya kadar 3 ve 4 e ortak bölünen sayıların toplamı: "+toplam);
+        System.out.println("Belirlenen sayıya kadar olan 3 ve 4'e bölünen sayıların ortalaması: "+ortalama);
+                
+    
+}
+}
